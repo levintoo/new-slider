@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testimonial Slider - Easy To Slide</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Customer reviews</h1>
+            <div class="review-box">
+                <div id="slide">
+                    <div class="card">
+                        <div class="profile">
+                            <img src="images/pic1.png">
+                                <div>
+                                    <h3>Riley Olie</h3>
+                                    <p>Web designer</p>
+                                </div>
+                          
+                        </div>
+                        <p>Look, I didn't power through the struggle
+                            Just to let a little trouble, knock me out of my position
+                            And interrupt the vision
+                            After everything I witnessed, after all of these decisions
+                            All these miles, feets, inches
+                            They can't add up to the distance
+                            That I have been through, just to get to
+                            A place where even if there's no closure, I'm still safe</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="images/pic2.jpg">
+                                <div>
+                                    <h3>Steve McCurry</h3>
+                                    <p>Database Admin</p>
+                                </div>
+                          
+                        </div>
+                        <p>Look, I didn't power through the struggle
+                            Just to let a little trouble, knock me out of my position
+                            And interrupt the vision
+                            After everything I witnessed, after all of these decisions
+                            All these miles, feets, inches
+                            They can't add up to the distance
+                            That I have been through, just to get to
+                            A place where even if there's no closure, I'm still safe</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="images/pic3.png">
+                                <div>
+                                    <h3>Martin Nguyen</h3>
+                                    <p>UI Designer</p>
+                                </div>
+                          
+                        </div>
+                        <p>Look, I didn't power through the struggle
+                            Just to let a little trouble, knock me out of my position
+                            And interrupt the vision
+                            After everything I witnessed, after all of these decisions
+                            All these miles, feets, inches
+                            They can't add up to the distance
+                            That I have been through, just to get to
+                            A place where even if there's no closure, I'm still safe</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="images/pic4.png">
+                                <div>
+                                    <h3>John Williaams</h3>
+                                    <p>Team lead</p>
+                                </div>
+                          
+                        </div>
+                        <p>Look, I didn't power through the struggle
+                            Just to let a little trouble, knock me out of my position
+                            And interrupt the vision
+                            After everything I witnessed, after all of these decisions
+                            All these miles, feets, inches
+                            They can't add up to the distance
+                            That I have been through, just to get to
+                            A place where even if there's no closure, I'm still safe</p>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <img src="images/up.png" id="upArrow">
+                    <img src="images/down.png" id="downArrow">
+                </div>
+            </div>
+        </div>
+        <script>
+            var slide = document.getElementById("slide");
+            var upArrow = document.getElementById("upArrow");
+            var downArrow = document.getElementById("downArrow");
+
+            let x = 0;
+
+            downArrow.onclick = function(){
+               if(x > "-900"){
+                    x = x - 300
+                slide.style.top = x + "px";
+            }
+        }
+        upArrow.onclick = function(){
+               if(x < "0"){
+                    x = x + 300
+                slide.style.top = x + "px";
+            }
+        }
+        </script>
+    </body>
+</html>
